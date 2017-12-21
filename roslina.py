@@ -1,4 +1,4 @@
-class Roslina:
+class Roslina():
     def __init__(self, nazwa):
         self.nazwa = nazwa
         self.waga = 0
@@ -25,11 +25,23 @@ class Roslina:
     def opis(self):
         return "{} waży {} gram i ma {} dni. \n Wilgotność: {}\n Położenie: {}".format(self.nazwa, self.waga, self.wiek, self.wilgotnosc, self.polozenie)
 
+    def obszar(self):
+        self.x = 6
+        self.y = 4
+        pass
+
+    def rysuj(self):
+        pass
+
 
 marchewka = Roslina("Marchewka")
 
 print(marchewka.rosnij(20))
 print(marchewka.opis())
+
+dab = Roslina("Dąb")
+
+print(dab.opis())
 
 
 
