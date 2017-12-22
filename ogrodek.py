@@ -6,21 +6,26 @@ class Ogrod:
     def opis(self):
         return "Rozmiar={0},Rosliny={1}".format(self.rozmiar, self.rosliny)
 
+    def pobliskie(self, uprawa):
+        pass
+
     def zasadz(self, roslina, polozenie):
         self.polozenie = 0
         pass
 
     def podlej(self, litry):
-        #Rosliny.wilgotnosc += litry
+        # Rosliny.wilgotnosc += litry
         pass
 
     def czekaj(self, dni):
-        self.rozmiar += 2*dni
+        # rozmiar ogrodu nie rośnie w czasie :)
+        self.rozmiar += 2 * dni
         return self.rozmiar
 
     def pokaz(self):
-        #pyglet
+        # pyglet
+        pass
+
 
 ogrod = Ogrod()
 print(ogrod.opis())
-
