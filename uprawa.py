@@ -27,6 +27,6 @@ class Uprawa(ABC):
         pass
 
     @abstractmethod
-    def narysuj(self):
+    def narysuj(self, skala, poziom_ziemi):
         #pyglet
         pass
