@@ -1,4 +1,6 @@
-class Uprawa:
+from abc import abstractmethod, ABC
+
+class Uprawa(ABC):
     def __init__(self, nazwa):
         self.ogrod = None  # przy sadzeniu zostanie ustawiony przez ogrod
         self.nazwa = nazwa
@@ -11,6 +13,7 @@ class Uprawa:
         # możemu tutaj zmienić wiek uprawy, bo to niezależy od jej rodzaju
         pass
 
+    @abstractmethod
     def podlej(self, litry):
         pass
 
@@ -18,10 +21,12 @@ class Uprawa:
         # można stworzyć opis z tego co już mamy
         pass
 
+    @abstractmethod
     def obszar(self):
         #rectangle
         pass
 
+    @abstractmethod
     def narysuj(self):
         #pyglet
         pass
