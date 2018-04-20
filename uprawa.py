@@ -30,3 +30,5 @@ class Uprawa(ABC):
     def narysuj(self, skala, poziom_ziemi):
         #pyglet
         pass
+
+

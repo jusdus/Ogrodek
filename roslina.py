@@ -40,7 +40,7 @@ print(marchewka.rosnij(20))
 print(marchewka.opis())
 
 dab = Roslina("Dąb")
-
+dab.rosnij(20)
 print(dab.opis())
 
 

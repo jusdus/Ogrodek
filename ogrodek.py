@@ -1,5 +1,5 @@
 import pyglet
-
+from roslina import Roslina
 
 class Ogrod:
     wyglad_ziemia = pyglet.resource.image("Obrazki/gleba.jpg")
@@ -15,7 +15,8 @@ class Ogrod:
         pass
 
     def zasadz(self, roslina, polozenie):
-        self.polozenie = 0
+        self.rosliny.append(roslina)
+        roslina.polozenie = polozenie
         pass
 
     def podlej(self, litry):
@@ -42,4 +43,7 @@ class Ogrod:
 
 if __name__ == "__main__":
     ogrod = Ogrod()
+    marchewka = Roslina("marchewka")
+    ogrod.zasadz(marchewka, 20)
     print(ogrod.opis())
+
