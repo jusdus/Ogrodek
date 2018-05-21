@@ -4,8 +4,8 @@ class Uprawa(ABC):
     def __init__(self, nazwa):
         self.ogrod = None  # przy sadzeniu zostanie ustawiony przez ogrod
         self.nazwa = nazwa
-        self.waga = 0
-        self.wilgotnosc = 0.0
+        self.waga = 1
+        self.wilgotnosc = 10
         self.wiek = 0
         self.polozenie = 0
 
@@ -15,7 +15,11 @@ class Uprawa(ABC):
 
     @abstractmethod
     def podlej(self, litry):
-        pass
+        if self.wilgotnosc < 100:
+            self.waga += 5
+            self.wilgotnosc += litry
+        else:
+            return False
 
     def opis(self):
         # można stworzyć opis z tego co już mamy

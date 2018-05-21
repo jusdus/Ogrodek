@@ -1,0 +1,18 @@
+# TODO list
+
+[] usunąć inne uruchamiania (eden jest głównym plikiem)
+
+[] zrobić rośnięcie (gdy mija czas - czekam dzień (tura)) - funkcja czekaj
+
+[] mówić z poziomu konsoli co robi eden:
+        - czekaj (ile dni)
+        - zasadź i gdzie
+        - podlewanie
+        - losowa pogoda
+        - wyczyść wszystko
+        - wyjdź
+        - metryczka rośliny albo wyświetlanie parametrów (wypisanie w konsoli)
+
+[] zrobienie innej rośliny (pomidor)
+
+[] dopracowanie rośliny (kiedy umiera, jaka wilgotność, kiedy zbiór)

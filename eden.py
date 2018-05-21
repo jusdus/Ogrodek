@@ -3,9 +3,21 @@ import rysowanie
 from ogrodek import Ogrod
 
 
-if __name__ == "__main__":
+def ask():
+    print("Ile marchewek chcesz zasadzić?")
+    many = int(input())
     ogrod = Ogrod()
-    ogrod.zasadz(Marchewka(),400)
-    ogrod.zasadz(Marchewka(),200)
-    ogrod.zasadz(Marchewka(),300)
+    x = 100
+    for i in range(many):
+        ogrod.zasadz(Marchewka(), x)
+        x += 100
+
+
+if __name__ == "__main__":
     rysowanie.pokaz_ogrod(ogrod)
+
+print(ask())
+
+
+
+

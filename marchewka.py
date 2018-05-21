@@ -1,5 +1,4 @@
-#implementacja uprawy, podobnie jak probny wyglad, ale lepiej
-#zasadzic w pliku rysowanie (napisac ogrodowi zasadz)
+
 
 from rysowanie import przyczep_srodek
 from ogrodek import Ogrod
