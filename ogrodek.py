@@ -1,5 +1,4 @@
 import pyglet
-from roslina import Roslina
 
 class Ogrod:
     wyglad_ziemia = pyglet.resource.image("Obrazki/gleba.jpg")
@@ -9,7 +8,10 @@ class Ogrod:
         self.rosliny = []
 
     def opis(self):
-        return "Rozmiar={0},Rosliny={1}".format(self.rozmiar, self.rosliny)
+        lista = []
+        for roslina in self.rosliny:
+            lista.append("Roślina {0}".format(roslina))
+        return "\n".join(lista)
 
     def pobliskie(self, uprawa):
         pass

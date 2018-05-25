@@ -35,13 +35,13 @@ class Roslina():
 
 
 marchewka = Roslina("Marchewka")
-
-print(marchewka.rosnij(20))
-print(marchewka.opis())
-
 dab = Roslina("Dąb")
 dab.rosnij(20)
-print(dab.opis())
+
+if __name__ == "__main__":
+    print(marchewka.rosnij(20))
+    print(marchewka.opis())
+    print(dab.opis())
 
 
 

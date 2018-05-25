@@ -9,6 +9,10 @@ class Uprawa(ABC):
         self.wiek = 0
         self.polozenie = 0
 
+    def __repr__(self):
+        return "{} o wadze {} g. Wiek: {} d, Wilgotność: {}%, Położenie {}".format(self.nazwa, self.waga, self.wiek, self.wilgotnosc, self.polozenie)
+
+
     def rosnij(self, dni):
         # możemu tutaj zmienić wiek uprawy, bo to niezależy od jej rodzaju
         pass
@@ -22,8 +26,8 @@ class Uprawa(ABC):
             return False
 
     def opis(self):
-        # można stworzyć opis z tego co już mamy
-        pass
+        return "{} waży {} gram i ma {} dni. \n Wilgotność: {}\n Położenie: {}".format(self.nazwa, self.waga, self.wiek,
+                                                                                       self.wilgotnosc, self.polozenie)
 
     @abstractmethod
     def obszar(self):
